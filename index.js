@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { pipeline } = require('stream')
 const express = require('express');
 const app = express();
 
@@ -33,7 +34,10 @@ app.get('/video/:videoName', (req, res) => {
 
     const videoStream = fs.createReadStream(videoPath, { start, end });
 
-    videoStream.pipe(res);
+    pipeline(videoStream, res, err => {
+        if (err) console.log(err)
+    })
+
 
 })
 
