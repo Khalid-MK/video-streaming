@@ -1,0 +1,58 @@
+{
+	"workbench.statusBar.visible": true, // set to "true" if you want the status bar to visible,
+	"workbench.colorCustomizations": {
+		"statusBar.foreground": "#ffffff",
+		"statusBar.background": "#9d3a3a"
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "comment",
+				"settings": {
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "string",
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#a6eba6"
+				}
+			}
+		]
+		// "comments": "#c06288"
+	}
+}
+
+// "editor.tokenColorCustomizations": {
+//     "textMateRules": [
+//       {
+//         "scope": [
+//           //following will be in italic (=FlottFlott)
+//           "comment",
+//           "entity.name.type.class", //class names
+//           "keyword", //import, export, return…
+//           "constant", //String, Number, Boolean…, this, super
+//           "storage.modifier", //static keyword
+//           "storage.type.class.js", //class keyword
+//         ],
+//         "settings": {
+//           "fontStyle": "italic"
+//         }
+//       },
+//       {
+//         "scope": [
+//           //following will be excluded from italics (VSCode has some defaults for italics)
+//           "invalid",
+//           "keyword.operator",
+//           "constant.numeric.css",
+//           "keyword.other.unit.px.css",
+//           "constant.numeric.decimal.js",
+//           "constant.numeric.json"
+//         ],
+//         "settings": {
+//           "fontStyle": ""
+//         }
+//       }
+//     ]
+//   }
